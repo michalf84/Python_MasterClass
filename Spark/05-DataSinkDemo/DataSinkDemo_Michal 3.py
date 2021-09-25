@@ -16,14 +16,14 @@ if __name__ == "__main__":
         .format("parquet") \
         .load("dataSource/flight*.parquet")
 
-    # logger.info("Num Partitions before: " + str(flightTimeParquetDF.rdd.getNumPartitions()))
-    # flightTimeParquetDF.groupBy(spark_partition_id()).count().show()
-    #
-    # partitionedDF = flightTimeParquetDF.repartition(5)
-    # logger.info("Num Partitions after: " + str(partitionedDF.rdd.getNumPartitions()))
-    # partitionedDF.groupBy(spark_partition_id()).count().show()
-    #
-    flightTimeParquetDF.write \
+    logger.info("Num Partitions before: " + str(flightTimeParquetDF.rdd.getNumPartitions()))
+    flightTimeParquetDF.groupBy(spark_partition_id()).count().show()
+
+    partitionedDF = flightTimeParquetDF.repartition(5)
+    logger.info("Num Partitions after: " + str(partitionedDF.rdd.getNumPartitions()))
+    partitionedDF.groupBy(spark_partition_id()).count().show()
+
+    partitionedDF.write \
         .format("avro") \
         .mode("overwrite") \
         .option("path", "dataSink/avro/") \
