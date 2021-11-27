@@ -3,6 +3,8 @@ from pyspark.sql import *
 from lib.logger import Log4j
 from lib.untils_mich import *
 
+
+
 if __name__ == "__main__":
     conf = get_spark_app_config()
 
