@@ -2,24 +2,15 @@
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Python" name="Python">
-      <configuration sdkName="Python 3.8 (python-mastercalss-master)" />
+      <configuration sdkName="Python 3.8" />
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
-    <content url="file://C:/demo/hadoop27">
-      <sourceFolder url="file://C:/demo/hadoop27/share/hadoop/common/jdiff" isTestSource="false" />
-      <sourceFolder url="file://C:/demo/hadoop27/share/hadoop/hdfs/jdiff" isTestSource="false" />
-      <sourceFolder url="file://C:/demo/hadoop27/share/hadoop/mapreduce/jdiff" isTestSource="false" />
-    </content>
-    <content url="file://C:/demo/spark3">
-      <sourceFolder url="file://C:/demo/spark3/examples/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://C:/demo/spark3/examples/src/main/scala" isTestSource="false" />
-      <sourceFolder url="file://C:/demo/spark3/python" isTestSource="false" />
-    </content>
+    <content url="file://C:/spark-3.1.2-bin-hadoop3.2/python" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Python 3.8 (python-mastercalss-master) interpreter library" level="application" />
+    <orderEntry type="library" name="Python 3.8 interpreter library" level="application" />
   </component>
 </module>
