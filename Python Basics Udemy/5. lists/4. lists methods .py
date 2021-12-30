@@ -8,7 +8,7 @@ print(min(even))
 print(max(even))
 print(min(odd))
 print(max(odd))
-
+print("index is:",even.index(4))
 print()
 print(len(even))
 print(len(odd))
