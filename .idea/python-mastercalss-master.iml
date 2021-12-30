@@ -11,6 +11,5 @@
     <content url="file://C:/spark-3.1.2-bin-hadoop3.2/python" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Python 3.8 interpreter library" level="application" />
   </component>
 </module>

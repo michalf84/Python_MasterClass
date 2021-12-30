@@ -25,3 +25,12 @@ index,character=(0,"a")
 print(index)
 print(character)
 
+dictionary2 = {0:3, 'x':5, 1:2}
+print(dictionary2.items())
+
+items=tuple(dictionary2.items())
+print(items)
+
+for i in items:
+    key,value =i
+    print("key is: "+str(key)+"value is: "+str(value))
