@@ -35,6 +35,11 @@ print(even)
 a=["michal","ola","costam","jescze","joio","fdsa","aa"]
 a.extend("fasola")
 
+# define a first list
+course = ['data science', 'machine learning', 'python', 'html', 'big data', 'html' ]
+course.reverse()
+print("reversed b is :",course)
+
 even.sort()
 print(even)
 even.sort(reverse=True)

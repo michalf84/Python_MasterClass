@@ -48,3 +48,28 @@ def odd(x):
 
 res=filter(odd,numbers)
 print(list(res))
+
+
+# sum of cubes of odd numers from 1 to 50
+
+# user defined function to obtain the cube
+def cube(x):
+    return(x*x*x)
+
+# user defined function to obtain odd numbers from a list
+def isodd(x):
+    return(x%2 == 1)
+
+# create a list of all cubes
+list_cubes = list(map(cube,filter(isodd,range(1,50))))
+
+# sum of all elements in the in the list_cube
+print(list_cubes)
+sum(list_cubes)
+
+
+#----REDUCE ----
+# import reduce function from functools
+sale = [14565,65460,74450,54546,23245,14543,84355,54566]
+total_sale = reduce(lambda a, b: a + b, sale)
+print(total_sale)m functools import reduce
