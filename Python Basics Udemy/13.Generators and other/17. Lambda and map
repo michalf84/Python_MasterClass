@@ -1,0 +1,50 @@
+min=(lambda x,y: x if x<y else y)
+print(min(2,4))
+
+
+number = (11, 21, 30, 34)
+a=list(map(lambda x: x**2,number))
+print(a)
+
+sentence = 'Python for Data Science'
+a=list(map(len,sentence.split()))
+print(a)
+
+sentence = 'Python for Data Science'
+a=list(map(len,sentence))
+print(a)
+#----------------splits word to characters using map and then filter
+sentence = 'Python for Data Science'
+a=list(map(lambda x: x if x=='P' else x,sentence))
+print(a)
+
+numbers = [ 74, 85, 14, 23 ]
+a=map(lambda x,y=5:x%y,numbers)
+print(list(a))
+
+numbers = [ 74, 85, 14, 23 ]
+a=map(lambda x: x%2,numbers)
+print(list(a))
+
+print("----**join list*-----")
+list1 = ['I', 'felt', 'happy', 'because', 'I', 'saw', 'the', 'others', 'were', 'happy']
+list2 = [11,22,33,44,55,66,77,88,99,100,101]
+print(list(map(lambda x,y:str(x)+str(y),list1,list2)))
+
+#----------------filter function
+arr1 = ['t','u','t','o','r','i','a','l']
+arr2 = ['p','o','i','n','t']
+
+a=filter(lambda x:x in arr2,arr1)
+print(list(a))
+print("filter odd")
+#--filter odd numbers
+numbers = [21, 23, 443, 355, 743, 823, 110, 1241, 3673, 352, 278, 37, 7]
+def odd(x):
+    if x%2==0:
+        return False
+    else:
+        return True
+
+res=filter(odd,numbers)
+print(list(res))
