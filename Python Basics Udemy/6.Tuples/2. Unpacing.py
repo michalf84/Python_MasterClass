@@ -27,6 +27,7 @@ print(character)
 
 dictionary2 = {0:3, 'x':5, 1:2}
 print(dictionary2.items())
+print(dictionary2.values())
 
 items=tuple(dictionary2.items())
 print(items)
