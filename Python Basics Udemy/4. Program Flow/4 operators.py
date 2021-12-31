@@ -20,7 +20,6 @@ print()
 d="negative indexing"
 print(d)
 print(d[-1])
-
 print("print: a[0:3]:",d[0:3])
 print("print: a[2:5]:",d[2:5])
 print("print: a[2:-3]:",d[2:-3])

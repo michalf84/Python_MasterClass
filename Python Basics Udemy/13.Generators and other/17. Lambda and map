@@ -1,6 +1,11 @@
 min=(lambda x,y: x if x<y else y)
 print(min(2,4))
 
+nu="9,223;453:432 654,434;321"
+a="".join(x if x not in (';') else '' for x in nu)
+print(a)
+b=list(map(lambda x: x if x not in (';',',') else '',nu))
+print(b)
 
 number = (11, 21, 30, 34)
 a=list(map(lambda x: x**2,number))
