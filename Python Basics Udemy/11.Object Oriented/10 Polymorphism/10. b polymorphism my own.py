@@ -39,3 +39,4 @@ def test_program(x):
 donald=Duck()
 
 print(donald.wing.ratio.noga.rozmiar)
+

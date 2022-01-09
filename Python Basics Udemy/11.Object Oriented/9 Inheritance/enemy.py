@@ -40,7 +40,7 @@ class Troll(Enemy): #inheritance
         print("Me {0._name} . {0._name} stomp you ".format(self))
 
 class Vampire(Enemy):
-    def __init__(self,name):
+    def __init__(self,names):
         super().__init__(name=name,lives=3,hit_points=12)
 
     #override method of enemy

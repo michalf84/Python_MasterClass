@@ -1,0 +1,31 @@
+class czlowiek():
+    def __init__(self,age):
+        self.age=age
+        self.noga=Noga()
+        self.reka=Reka("czarna")
+        self.noga=Noga()
+    def biegam(self):
+        print("biegam jaak czlowiek")
+
+
+    def talk():
+        print("hello i am michal")
+
+class Noga():
+    def __init__(self):
+        self.palce=5
+        self.nogi=2
+    def biegam(self):
+        print("biegam jak noga")
+
+class Reka():
+    def __init__(self, kolor):
+        self.kolor=kolor
+        self.reka="dluga reka"
+        print(self.reka,kolor)
+
+michaello=czlowiek(25)
+print(michaello.noga.palce)
+print(michaello.reka.reka)
+michaello.biegam()
+michaello.noga.biegam()

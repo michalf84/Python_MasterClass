@@ -1,10 +1,11 @@
 import turtle
 import time
 
-turtle.forward(150)
-turtle.right(250)
-turtle.forward(150)
-turtle.circle(75)
+turtle.forward(5)
+turtle.right(7)
+turtle.forward(9)
+turtle.circle(11)
+
 
 time.sleep(4)
 # alternative to sleep
